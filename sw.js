@@ -1,14 +1,15 @@
 /* 我的小站 — Service Worker */
-const CACHE = 'my-little-station-v1';
+const CACHE = 'my-little-station-v2';
+const BASE = '/my-little-station';
 const ASSETS = [
-  './',
-  './index.html',
-  './styles.css',
-  './app.js',
-  './manifest.json',
-  './icons/icon.svg',
-  './icons/icon-192.png',
-  './icons/icon-512.png'
+  `${BASE}/`,
+  `${BASE}/index.html`,
+  `${BASE}/styles.css`,
+  `${BASE}/app.js`,
+  `${BASE}/manifest.json`,
+  `${BASE}/icons/icon.svg`,
+  `${BASE}/icons/icon-192.png`,
+  `${BASE}/icons/icon-512.png`
 ];
 
 self.addEventListener('install', e => {
